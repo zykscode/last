@@ -10,7 +10,7 @@ function Container({ children, ...props}:any) {
       <CoverWrapper img={props.coverWrapper} />
       <main className="page page-has-cover page-has-icon page-has-image-icon full-page index-page">
         <IconHero />
-        <h1 className="title capitalize">
+        <h1 className="title text-[1.2em] md:text-[2em] capitalize">
           {(props.title && `${props.title} `) || 'Zykson.com'}
         </h1>
         {children}
