@@ -15,7 +15,7 @@ const Navs = () => {
     <nav className="nav-header-rhs breadcrumbs">
       {navs.map((nav) => {
         return (
-          <Link className="breadcrumb button" key={nav} href={`/${nav}`}>
+          <Link className="breadcrumb button capitalize" key={nav} href={`/${nav}`}>
             {nav}
           </Link>
         );
