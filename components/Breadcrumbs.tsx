@@ -7,7 +7,7 @@ const Breadcrumbs = () => {
     <div className="breadcrumbs">
       <div className="breadcrumb active">
         <PageLogo />
-        <span>Zykson.com</span>
+        <span className='hidden md:block  '>Zykson.com</span>
       </div>
     </div>
   );
