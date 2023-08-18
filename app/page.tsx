@@ -1,7 +1,8 @@
-import Image from 'next/image'
+import Container from '#/components/container'
+import Me from '#/public/static/images/me.jpg';
 
 export default function Home() {
   return (
-   <main className='page-scroller'>maim</main>
+   <Container coverWrapper={Me}/>
   )
 }
