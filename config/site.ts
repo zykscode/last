@@ -9,6 +9,7 @@ export const siteConfig: SiteConfig = {
     twitter: 'zykson',
     github: 'zykscode',
     youtube: 'zykson',
+    linkedin: 'zyk'
   },
 };
   
