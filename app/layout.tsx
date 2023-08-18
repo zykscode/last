@@ -1,6 +1,12 @@
-import './globals.css'
+import '#/styles/style.scss';
+import '#/styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Analytics } from '#/components/analytics';
+import { TailwindIndicator } from '#/components/tailwind-indicator';
+import { ThemeProvider } from '#/components/theme-provider';
+import LayoutWrapper from '#/components/ui/layout';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +21,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      
+      <body className={inter.className}>
+   <ThemeProvider attribute="class" defaultTheme="system" enableSystem>  
+          <LayoutWrapper>
+        {children}
+        </LayoutWrapper>
+     <Analytics />
+      <TailwindIndicator />
+      </ThemeProvider>
+      </body>
+
     </html>
   )
 }
