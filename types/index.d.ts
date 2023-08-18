@@ -46,6 +46,7 @@ export type SiteConfig = {
     twitter: string;
     github: string;
     youtube: string;
+    linkedin:string;
   };
 };
 
