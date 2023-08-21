@@ -3,6 +3,8 @@ import Container from '#/components/container'
 import Me from '#/public/static/images/me.jpg';
 
 export default function Home() {
+  console.log('allPosts')
+  
   return (
    <Container coverWrapper={Me}>
      <div className="page-content page-content-has-aside">
