@@ -914,7 +914,7 @@ pre {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-	padding-inline: 4px;
+	padding-inline: 2vw;
 	align-items: center;
 	min-height: calc(100vh - var(--header-height));
 }
@@ -4028,15 +4028,13 @@ html {
 
 @media only screen and (max-width:920px) {
 	.index-page.page {
-		padding-left: 4vw;
-		padding-right: 4vw;
+		padding-inline: 2vw;
 	}
 }
 
 @media only screen and (max-width:720px) {
 	.page {
-		padding-left: 4vw;
-		padding-right: 4vw;
+		padding-inline: 2vw;
 	}
 }
 
