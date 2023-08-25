@@ -8,7 +8,7 @@ function Container({ children, ...props}:any) {
   return (
     <div className="page-scroller ">
       <CoverWrapper img={props.coverWrapper} />
-      <main className="page page-has-cover page-has-icon page-has-image-icon full-page index-page">
+      <main className="page bg-yellow-100 page-has-cover page-has-icon page-has-image-icon full-page index-page">
         <IconHero />
         <h1 className="title text-[1.2em] md:text-[2em] capitalize">
           {(props.title && `${props.title} `) || 'Zykson.com'}
