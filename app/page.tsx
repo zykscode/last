@@ -1,9 +1,14 @@
 import Aside from '#/components/Aside';
 import Container from '#/components/container'
 import Me from '#/public/static/images/me.jpg';
+import { allPosts } from "contentlayer/generated"
+import { compareDesc } from "date-fns"
+
+import { formatDate } from "#/lib/utils"
+
 
 export default function Home() {
-  console.log('allPosts')
+  console.log(allPosts)
   
   return (
    <Container coverWrapper={Me}>
@@ -13,7 +18,7 @@ export default function Home() {
             <div className="collection-header">
               <div className="collection-header-title">Blog Posts</div>
             </div>
-            <div className="gallery">
+            <div className="gallery bg-item_blue">
               <div className="gallery-view">
                 <div className="gallery-grid gallery-grid-size-medium">
                   {/* {posts.map((post) => (
